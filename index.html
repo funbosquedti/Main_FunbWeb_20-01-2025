@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funbosque</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- versão de desenvolvimento, inclui avisos úteis no console  -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+</head>
+
+<body>
+    <header class="header"></header>
+    <section class="fundo">
+        <div class="logo-container" style="text-align: center;">
+            <img src="imagens/logo-funbosque.png" alt="Logo Funbosque" width="150" height="200">
+        </div>
+    </section>
+    <header class="header"></header>
+
+    <main class="main">
+        <!-- CABECALHO-->
+        <div class="text-center">
+            <div id="globais">
+                <h1>{{titulo_1}}</h1>
+                <h2>{{boasVindas}}</h2>
+                <h3>{{instrucoes_1}}</h3>
+
+                <hr class="custom-hr">
+                <h1>{{ nome_dti }}</h1>
+                <h1>{{ dti_nome }}</h1>
+            </div>
+        </div>
+
+        <!--DTI-->
+        <section class="content">
+            <!--AGENDAMENTO MULTIMIDIA-->
+            <a href="agen_multimidia.html" class="card">
+                <img src="imagens/agendarMidia.jpg" alt="Departamentos">
+                <div class="container">
+                    <h2><b>Agendamento Multimídia</b></h2>
+                </div>
+            </a>
+
+            <!--RÁDIO CIPÓ-->
+            <a href="https://nuvemfunbosque.belem.pa.gov.br/index.php/call/yn29kb4c" class="card">
+                <img src="imagens/noticias-web.jpeg" alt="HelpDesk">
+                <div class="container">
+                    <h2><b>Rádio Cipó</b></h2>
+                </div>
+            </a>
+            
+            <!--CENTRAL DE AJUDA-->
+            <a href="https://nuvemfunbosque.belem.pa.gov.br/index.php/call/zvkwdedc" class="card">
+                <img src="imagens/HelpDesk.jpg" alt="HelpDesk">
+                <div class="container">
+                    <h2><b>Central de Ajuda</b></h2>
+                </div>
+            </a>
+        </section>
+        <hr class="custom-hr">
+
+        <!--ALMOXARIFADO-->
+        <div class="text-center">
+            <div id="globais">
+                <h1>Almoxarifado</h1>
+            </div>
+        </div>
+
+        <!--ÁGUA MINERAL-->
+       <section class="content">
+            <a href="aguaMineral.html" class="card">
+                <img src="imagens/aguaMineral.webp" alt="Departamentos">
+                <div class="container">
+                    <h2><b>Pedido de Água</b></h2>
+                </div>
+            </a>
+        </section>
+        <hr class="custom-hr">
+        <div style="height: 600px;"></div> <!-- ajuste a altura conforme necessário -->
+    </main>
+    </div>
+    <script src="script.js"></script>
+    <footer class="footer">
+        <p>&copy; 2024 Departamento de Tecnologia da Informação (DTI) - Funbosque <a href="#">Sobre</p>
+    </footer>
+</body>
+
+</html>

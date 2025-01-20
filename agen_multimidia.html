@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento Multimídia</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- versão de desenvolvimento, inclui avisos úteis no console  -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+
+</head>
+<body>
+    <header class="header">
+    </header>
+        <main class="main">
+            <section class="fundo">
+                <div class="logo-container" style="text-align: center;">
+                    <img src="imagens/logo-funbosque.png" alt="Logo Funbosque" width="150" height="200">
+                </div>
+            </section>
+            <header class="header"></header>
+            <div class="text-center">
+                <div id="globais">
+                    <h1>Agendamento Multimídia</h1>
+                    <h2>{{ instrucoes_2}}</h2>
+               </div>
+            </div>
+            <hr class="custom-hr">
+            <section class="content">
+                <!--SALAS DE AULA-->
+                <a href="blocos_salasAula.html" class="card">
+                    <img src="imagens/bloco_salasAula.jpg" alt="Salas_de_Aula">
+                    <div class="container">
+                        <h2><b>Salas de Aula</b></h2>
+                    </div>
+                </a>
+                <!--SALA DOS PROFESSORES-->
+                <a href="sala_professores.html" class="card">
+                    <img src="imagens//sala_professores.webp " alt="Salas_dos_Professores">
+                    <div class="container">
+                        <h2><b>Sala dos Professores</b></h2>
+                    </div>
+                </a>
+            </section>
+            <section class="content">
+                <!--LABORATÓRIOS-->
+                <a href="bloco_laboratorios.html" class="card">
+                    <img src="imagens/agen_laboratorios.png" alt="Laboratorios">
+                    <div class="container">
+                        <h2><b>Laboratórios</b></h2>
+                    </div>
+                </a>
+                <!--ESPAÇOS INDEPENDENTES-->
+                <a href="https://funbosquedti.github.io/PT7_Espacos_Independentes_FunbWeb_20-01-2025/" class="card">
+                    <img src="imagens/espaçosIndendentes.png" alt="Espacos_Independentes">
+                    <div class="container">
+                        <h2><b>Espaços Independentes</b></h2>
+                    </div>
+                </a>
+
+            </section>  
+            <hr class="custom-hr">
+            <div style="height: 600px;"></div> <!-- ajuste a altura conforme necessário -->
+        </main>
+    </div>
+    <script src="script.js"></script>
+    <footer class="footer">
+        <p>&copy; 2024 Departamento de Tecnologia da Informação (DTI) - Funbosque <a href = "#">Sobre</p>
+    </footer>
+</body>
+</html>
