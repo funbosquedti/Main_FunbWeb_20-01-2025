@@ -20,9 +20,48 @@
     <header class="header"></header>
 
     <main class="main">
+
         <!-- CABECALHO-->
         <div class="text-center">
             <div id="globais">
+                <div style="text-align: center; margin-top: 50px; font-family: Arial, sans-serif;">
+
+                    <!-- font-size: 24px aumenta o tamanho da letra do aviso -->
+                    <p style="font-size: 24px;">Atenção: <span style="color: red; font-weight: bold;">este site sairá do
+                            ar em outubro, salve este novo link no seu navegador:</span></p>
+
+                    <!-- Campo com o link maior -->
+                    <input type="text" value="https://portaltiebosque.netlify.app/" id="meuLink" readonly
+                        style="width: 300px; padding: 10px; font-size: 16px; text-align: center;">
+
+                    <!-- Botão maior e com mais destaque -->
+                    <button onclick="copiarTexto()"
+                        style="padding: 10px 20px; font-size: 16px; font-weight: bold; cursor: pointer; background-color: #007bff; color: white; border: none; border-radius: 5px;">Copiar
+                        Link</button>
+
+                </div>
+
+                <script>
+                    function copiarTexto() {
+                        var linkInput = document.getElementById("meuLink");
+                        linkInput.select();
+                        linkInput.setSelectionRange(0, 99999);
+                        navigator.clipboard.writeText(linkInput.value);
+                        alert("Link copiado com sucesso!");
+                    }
+                </script>
+
+
+                <script>
+                    function copiarTexto() {
+                        var linkInput = document.getElementById("meuLink");
+                        linkInput.select();
+                        linkInput.setSelectionRange(0, 99999);
+                        navigator.clipboard.writeText(linkInput.value);
+                        alert("Link copiado com sucesso!");
+                    }
+                </script>
+
                 <h1>{{titulo_1}}</h1>
                 <h2>{{boasVindas}}</h2>
                 <h3>{{instrucoes_1}}</h3>
@@ -50,7 +89,7 @@
                     <h2><b>Rádio Cipó</b></h2>
                 </div>
             </a>
-            
+
             <!--CENTRAL DE AJUDA-->
             <a href="https://nuvemfunbosque.belem.pa.gov.br/index.php/call/zvkwdedc" class="card">
                 <img src="imagens/HelpDesk.jpg" alt="HelpDesk">
@@ -69,7 +108,7 @@
         </div>
 
         <!--ÁGUA MINERAL-->
-       <section class="content">
+        <section class="content">
             <a href="aguaMineral.html" class="card">
                 <img src="imagens/aguaMineral.webp" alt="Departamentos">
                 <div class="container">
